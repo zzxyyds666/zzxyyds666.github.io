@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/basic.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<title>屏盾科技</title>
+<meta name="keywords" content="屏盾科技" />
+<meta name="description" content="屏盾科技" />
+</head>
+<body>
+<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.js"></script>
+<script type="text/javascript" src="js/share.js"></script>
+<div class="header">
+  <div class="heading_con">
+    <div class="dw">
+      <div class="heading">
+        <div class="logo fl"><a href="/"><img src="images/logo.png" alt="logo" /></a></div>
+        <div class="top_right_con fr">
+          <div class="head_save_site"><a class="a1" href="javascript:addfavorite();">收藏本站</a><a class="a2" href="javascript:setHomepage();">设为主页</a></div>
+          <div class="head_tel"> <img src="images/tel.png" alt="logo" /> </div>
+        </div>
+        <div class="c"></div>
+      </div>
+    </div>
+  </div>
+  <div class="navBar">
+    <ul class="nav clearfix">
+      <li id="m1" >
+        <h3><a href="index.html">网站首页</a></h3>
+      </li>
+      <li id="m3" >
+        <h3><a href="product_list.html">应用场景</a></h3>
+      </li>
+      <li id="m4" >
+        <h3><a href="product_article.html">产品展示</a></h3>
+    </ul>
+  </div>
+  <script type="text/javascript">
+ $(function(){
+	  $('div.navBar>ul>li').hover(function(){
+		  $(this).addClass('here');
+		  $(this).siblings();
+		  },function(){
+			   $(this).removeClass('here');	  
+			  })
+			  			  
+	 })
+  document.getElementById("m1").className='current';
+
+	</script>
+</div>
+<div class="mainer">
+  <!--banner-->
+  <div id="ifocus">
+    <div id="ifocus_pic">
+      <div id="ifocus_piclist">
+        <ul>
+          <li><a href="/" style="background:url(images/b2.jpg) no-repeat center center;width:100%;"></a></li>
+          <li><a href="/" style="background:url(images/b1.jpg) no-repeat center center;width:100%;"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="ifocus_btn">
+      <ul>
+        <li class=""><img src="images/b2.jpg" width="200" height="47"></li>
+        <li class=""><img src="images/b1.jpg" width="200" height="47"></li>
+      </ul>
+    </div>
+  </div>
+  <script type="text/javascript">jQuery("#ifocus").slide({ titCell:"#ifocus_btn li", mainCell:"#ifocus_piclist ul",effect:"top", delayTime:200, autoPlay:true,triggerTime:0});</script>
+  <div class="public_title">
+    <div class="m2pos">
+      <div class="m2posName">产品展示/PRODUCTS</div>
+      <div class="m2pos_adr"><a class="m2pos_a" href="/">产品展示</a><a class="m2pos_a" href="/">产品展示</a></div>
+    </div>
+  </div>
+  <!--about-->
+  <div class="conbg">
+    <div class="dw">
+      <div class="pmenu">
+          <li><a class="pmenu_a pmenu_cuta" href="/">产品展示</a></li>
+      </div>
+      <div class="content">
+        <div class="article_img fl"> <img src="images/p1.jpg"/> </div>
+        <div class="article_right fr">
+          <div class="article_title">
+            <h2><span>产品名：</span>屏盾科技电磁屏蔽涂料</h2>
+            <a class="btn" href="/">询价</a> </div>
+          <div class="c"></div>
+          <div class="article_list">
+            <p><span>产品性能：</span><br >屏蔽效能：50MHz~50GHz<br >耐热温度：-50℃~160℃<br >耐腐蚀性：优<br >材质重量：轻<br >电性能稳定性：≤0.030</p>
+            <p><span>三大核心技术：</span><br >核心技术一：创新的均性空心漂珠提取工艺<br >核心技术二：核心高性能加壳包裹技术<br >核心技术三：改性的超强MXene高屏蔽材料</p>
+          </div>
+        </div>
+      </div>
+          <div class="article_title">
+ <ul>
+        </ul>
+      <div class="c"></div>
+      <div class="content">
+        <p style="margin-top: 10px;text-align:center"><img src="images/p3.jpg" /></p>
+        <p style="margin-top: 10px;text-align:center"><img src="images/p2.jpg" /></p>
+
+      </div>
+      <div class="c"></div>
+    </div>
+  </div>
+</div>
+<div class="myfooter">
+    
+  <a href="#">首  页</a>|
+  <a a href="#">产品中心</a>|
+  <a a href="#">技术服务</a>|
+  <a a href="#">联系我们</a>|
+
+    <p>版权所有：屏盾科技</p>
+</div>
+</body>
+</html>
